@@ -16,20 +16,13 @@ The dataset contains 1361 images supplemented with additional spatial metadata, 
 |   wall-mounted  	|    1284   	| <img src="./README_FILES/example_1.png" width="200px" height="200px"> |
 | large road sign 	|    232    	| <img src="./README_FILES/example_8.png" width="200px" height="200px"> |
 
-## System Requirements
-
-* `ffmpeg` - for video conversion
-
-    ```bash
-    sudo apt install ffmpeg
-    ```
-
-* `exiftool` - for metadata extraction
-
-    ```bash
-    sudo apt install libimage-exiftool-perl
-    ```
 
 ## Usage
 
-*Scripts, model weights and pipeline files will be available soon.*
+### Training scripts
+
+All training scripts and pipelines are located in the `./ml` directory. Next instructions are placed in [this file](./ml/README.md).
+
+### Application
+
+The application is located in the `./app` directory. Tnstallation steps and guide are placed in [this file](./app/README.md).
