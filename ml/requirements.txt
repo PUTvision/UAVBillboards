@@ -1,0 +1,3 @@
+extif
+ultralytics
+opencv-python

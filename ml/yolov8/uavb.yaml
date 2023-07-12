@@ -1,0 +1,10 @@
+path: ../../dataset/yolo_seg/  # dataset root dir
+train: train.txt
+val: val.txt
+test: test.txt
+
+# Classes
+names:
+  0: free-standing
+  1: wall-mounted
+  2: road-sign

@@ -1,0 +1,8 @@
+train: ../../dataset/yolo_seg/fold_4/train.txt
+val: ../../dataset/yolo_seg/fold_4/val.txt
+test: ../../dataset/yolo_seg/fold_4/test.txt
+
+nc: 3
+
+# Classes
+names: ['free-standing', 'wall-mounted', 'road-sign']
