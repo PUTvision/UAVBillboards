@@ -40,7 +40,7 @@ class YOLO:
            
         h, w = frame.shape[:2]
            
-        results = self.model.track(frame, conf=0.75, device=0, half=True, show=False, verbose=False, tracker="bytetrack.yaml", persist=True)[0]
+        results = self.model.track(frame, conf=0.75, imgsz=960, device=0, half=True, show=False, verbose=False, tracker="bytetrack.yaml", persist=True)[0]
 
         predictions = {}
         
