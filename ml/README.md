@@ -43,7 +43,7 @@ pip install -r requirements.txt
     > **Note:** You have to select do you want to generate bounding boxes (`b`) or segmentation masks (`s`). We used segmentation masks in our experiments.
 
      ```bash
-    python3 dataset/coco_to_yolo.py
+    python3 dataset/convert.py
     ```
 
 * Split dataset into train and test sets:
