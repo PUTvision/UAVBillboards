@@ -32,10 +32,10 @@ pip install -r requirements.txt
 
 ## Dataset
 
-* Download dataset using `download.sh` script:
+* Download dataset using `download.py` script:
 
     ```bash
-    ./dataset/download.sh
+    python3 dataset/download.py
     ```
 
 * Convert dataset from COCO to YOLO format:
