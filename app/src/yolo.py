@@ -31,8 +31,7 @@ class YOLOResult:
 
 class YOLO:
     def __init__(self, yolo_model_path: str) -> None:
-        self.model_l = YOLOv8(yolo_model_path)
-        self.model_r = YOLOv8(yolo_model_path)
+        self.model = YOLOv8(yolo_model_path)
 
     def process_frame(self, frame: np.ndarray) -> None:
         offset = max(0, int(frame.shape[0]-frame.shape[1]//2))
@@ -41,7 +40,7 @@ class YOLO:
            
         h, w = frame.shape[:2]
            
-        results = self.model_l.track(frame, conf=0.75, device=0, show=False, verbose=False, tracker="bytetrack.yaml", persist=True)[0]
+        results = self.model.track(frame, conf=0.75, device=0, half=True, show=False, verbose=False, tracker="bytetrack.yaml", persist=True)[0]
 
         predictions = {}
         
