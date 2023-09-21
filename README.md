@@ -10,6 +10,12 @@ We propose a deep-learning-based system for the automatic detection of billboard
 
 The dataset contains 1361 images supplemented with additional spatial metadata, together with 5210 annotations in a COCO-like format. It can be downloaded from [here](https://chmura.put.poznan.pl/s/lIMsy8OlOjuXAIJ).
 
+The dataset is also available under the link:
+```
+https://doi.org/10.5281/zenodo.8366970
+```
+
+
 | **Object name** 	| **Count** 	| **Example** 	|
 |:---------------:	|:---------:	|:-----------:	|
 |  free-standing  	|    3694   	| <img src="./README_FILES/example_0.png" width="200px" height="200px"> |
