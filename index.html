@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="width=device-width, initial-scale=1">
+    <meta name="description" content="MAVREC- Multiview Aerial Visual RECognition dataset with videos recorded from different perspectives. Rural and urban pastures from European geographies."/>
+    <title>UAV Billboards dataset </title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body {
+        background: #fdfcf9 no-repeat fixed top left;
+        font-family:'Open Sans', sans-serif;
+      }
+    </style>
+  </head>
+
+
+
+  <!-- cover -->
+  <section>
+    <div class="jumbotron text-center mt-0">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>Multiview Aerial Visual Recognition (MAVREC):</h2> 
+            <!-- <h3>DVD</h3>  -->
+            <h2>Can Multi-view Improve Aerial Visual Perception?</h2>
+            <!-- <h4 style="color:#6e6e6e;"> submitted NeurIPS 2023 </h4> -->
+            <hr>
+            <!-- author thing here -->
+
+            <div class="row justify-content-center">
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="#" role="button"  target="_blank">
+                    <i class="fa fa-file"></i> Paper</a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" id="code_soon" href="https://github.com/PUTvision/UAVBillboards/tree/main?tab=readme-ov-file#dataset" role="button" 
+                    target="_blank" disabled=1>
+                <!-- <i class="fa fa-github-alt"></i> Data </a> </p> -->
+                <i class="fa fa-database" aria-hidden="true"></i> Data </a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/PUTvision/UAVBillboards" role="button"  target="_blank">
+                    <i class="fa fa-file"></i> Code </a> </p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+        <h6 style="color:#8899a5" class="text-center"> 
+              TL;DR; The dataset contains 1361 images supplemented with additional spatial metadata, together with 5210 annotations in a COCO-like format.
+            </h6>
+            <div><b style="color:#fd5638; font-size:large" id="demo-warning"></b>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+    
+  <!-- Higlight Table -->
+  <section>
+    <div class="container">
+      <table>
+          <tr>
+            <td>
+              <td>
+                  <!-- <img src="https://example.com/icon1.png" alt="Icon 1"> -->
+                  <i class="fa fa-picture-o" aria-hidden="true"></i>
+                  <br>
+                  1361 Frames
+              </td>
+              <td>
+                  <!-- <img src="https://example.com/icon2.png" alt="Icon 2"> -->
+                  <i class="fa fa-th-large" aria-hidden="true"></i>
+                  <br>
+                  5210 Instance Segmentation Labels
+              </td>
+              <td>
+                  <!-- <img src="https://example.com/icon3.png" alt="Icon 3"> -->
+                  <i class="fa fa-cube" aria-hidden="true"></i>
+                  <br>
+                 3 Objects Classes
+              </td>
+          </tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="youtube-embed">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Q6tZfh7PukI?autoplay=1&mute=1&loop=1" title="UAV Billboard detection and tracking | YOLOv8 + ByteTrack" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </section>
+ 
+
+  <footer class="text-center" style="margin-bottom:10px; font-size: medium;">
+      <hr>
+      Thanks to <a href="https://lioryariv.github.io/" target="_blank">Lior Yariv</a> for the <a href="https://lioryariv.github.io/idr/" target="_blank">website template</a>.
+  </footer>
+
+  <script type="text/javascript">
+    function changePlaybackSpeed(speed)
+        {
+            document.getElementById('inspect_vid').playbackRate = speed;
+        }
+        changePlaybackSpeed(0.25)
+
+    var demo = document.getElementById("demo");
+    var startTime;
+    var timeout = undefined;
+    demo.addEventListener("loadstart", function() {
+      startTime = Date.now();
+      timeout = setTimeout(function () {
+        var demoWarning = document.getElementById("demo-warning");
+        var giteeLink = document.createElement("a");
+        giteeLink.innerText = "mirror hosted in mainland China";
+        giteeLink.href = "https://project-pages-1255496016.cos-website.ap-shanghai.myqcloud.com/loftr/";
+        // var bilibiliLink = document.createElement("a");
+        // var youtubeLink = document.createElement("a");
+        // bilibiliLink.innerText = "BiliBili";
+        // bilibiliLink.href = "";
+        // youtubeLink.innerText = "YouTube";
+        // youtubeLink.href = "";
+
+        demoWarning.append("Loading the videos took too long, you can optionally visit this site in the ", giteeLink, ".");
+        // demoWarning.append("Loading the video took too long, you can optionally watch it on Bilibili", bilibiliLink, " or YouTube", youtubeLink, ".");
+        clearTimeout(timeout);
+        timeout = undefined;
+      }, 6000);
+    });
+    demo.addEventListener("loadeddata", function() {
+      if (timeout) {
+        clearTimeout(timeout);
+        timeout = undefined;
+      }
+    });
+//     var source = document.createElement("source");
+//     source.setAttribute("src", "images/loftr-homepage-demo.mp4");
+//     source.setAttribute("type", "video/webm");
+//     demo.appendChild(source);
+  </script>
+  <script>
+    MathJax = {
+      tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</body>
+</html>
+

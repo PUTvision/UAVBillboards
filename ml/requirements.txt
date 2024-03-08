@@ -1,3 +1,0 @@
-exif
-ultralytics
-opencv-python
