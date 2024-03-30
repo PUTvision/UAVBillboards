@@ -8,6 +8,8 @@ We propose a deep-learning-based system for the automatic detection of billboard
 
 ## Dataset
 
+> **Note:** The dataset is licensed under the `Creative Commons Attribution Non-Commercial 4.0 International`. If you want to use the dataset commercially, don't hesitate to contact the authors.
+
 The dataset contains 1361 images supplemented with additional spatial metadata, together with 5210 annotations in a COCO-like format. It can be downloaded from [here](https://chmura.put.poznan.pl/s/lIMsy8OlOjuXAIJ).
 
 The dataset is also available under the link:
